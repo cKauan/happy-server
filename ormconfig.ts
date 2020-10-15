@@ -8,6 +8,8 @@ export = {
     entities: process.env.DATABASE_ENTITIES
         ? process.env.DATABASE_ENTITIES
         : ["./src/models/*.ts"],
+    // if you are localhost, exclude this line (ssl)
+    ssl: { rejectUnauthorized: false },
     cli: {
         migrationsDir: process.env.DATABASE_ENTITIES_DIR
             ? process.env.DATABASE_ENTITIES_DIR
