@@ -3,7 +3,7 @@ export default {
     render(image: Image) {
         return {
             id: image.id,
-            url: `${process.env.API_URL}/uploads/${image.path}`,
+            url: `https://happy-servidor.herokuapp.com/uploads/${image.path}`,
         };
     },
     renderMany(images: Image[]) {
