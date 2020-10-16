@@ -1,3 +1,4 @@
+// Check if its in heroku environment
 if (process.env.DATABASE_URL) {
     return module.exports = {
         type: "postgres",
@@ -11,6 +12,7 @@ if (process.env.DATABASE_URL) {
         },
     };
 }
+// If its localhost - put your info here!
 else {
     module.exports = {
         type: "postgres",
