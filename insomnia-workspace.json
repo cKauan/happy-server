@@ -1,0 +1,247 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2020-10-17T18:35:19.198Z",
+    "__export_source": "insomnia.desktop.app:v2020.4.1",
+    "resources": [
+        {
+            "_id": "req_c1fe9db8aa2b4668b57872092281e622",
+            "parentId": "wrk_5fbfc8bdf3a04133b8c8469d171329c6",
+            "modified": 1602715371205,
+            "created": 1602603882105,
+            "url": "{{ base_url }}/orphanages",
+            "name": "Criar Orfanato",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "multipart/form-data",
+                "params": [
+                    {
+                        "name": "name",
+                        "value": "Lar de Cascavel",
+                        "description": "",
+                        "id": "pair_ea1a7cfedc6642d8944eec521594a805",
+                        "disabled": false
+                    },
+                    {
+                        "name": "latitude",
+                        "value": "-4.1284891",
+                        "description": "",
+                        "id": "pair_95c45396ae444f41a3d958a8d0568383"
+                    },
+                    {
+                        "name": "longitude",
+                        "value": "-38.2562955",
+                        "description": "",
+                        "id": "pair_68f0dea8ea6e4600bd62feb189d2df75"
+                    },
+                    {
+                        "name": "about",
+                        "value": "Ajudar crianças em estado de vulnerabilidade social",
+                        "description": "",
+                        "id": "pair_b913a238f5ad4ae2887722df84ce9be3",
+                        "disabled": false
+                    },
+                    {
+                        "name": "instructions",
+                        "value": "Venha nos conhecer",
+                        "description": "",
+                        "id": "pair_ac77c398ae084403b8c05b5e792cbba6"
+                    },
+                    {
+                        "name": "opening_hours",
+                        "value": "Das 10h até as 18h",
+                        "description": "",
+                        "id": "pair_4a4379cba92f46b68c99928dfd25fc3b"
+                    },
+                    {
+                        "name": "open_on_weekends",
+                        "value": "false",
+                        "description": "",
+                        "id": "pair_c6eba8b480e04834b1f370042877413d",
+                        "disabled": false
+                    },
+                    {
+                        "name": "images",
+                        "value": "",
+                        "description": "",
+                        "id": "pair_2c5e4331135e40acbb8a1d0623b17ce5",
+                        "type": "file",
+                        "fileName": "C:\\Users\\carlo\\OneDrive\\Área de Trabalho\\cenario02.jpg"
+                    },
+                    {
+                        "name": "images",
+                        "value": "",
+                        "description": "",
+                        "id": "pair_c9e77ceb6598462a81e5d507fedfef0e",
+                        "type": "file",
+                        "fileName": "C:\\Users\\carlo\\OneDrive\\Área de Trabalho\\cenario05.jpg"
+                    },
+                    {
+                        "name": "images",
+                        "value": "",
+                        "description": "",
+                        "id": "pair_d905fec200794045b7e26ac79ac45c8c",
+                        "type": "file",
+                        "fileName": "C:\\Users\\carlo\\OneDrive\\Área de Trabalho\\cenario03.jpg"
+                    }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "multipart/form-data",
+                    "id": "pair_11271d7fb7d14f5b8ec2eeb21ad68aac"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1602603882105,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "wrk_5fbfc8bdf3a04133b8c8469d171329c6",
+            "parentId": null,
+            "modified": 1602592243345,
+            "created": 1602592243345,
+            "name": "NLW#3",
+            "description": "",
+            "scope": null,
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_0e5cf0ffa95f4b37abde4951af7c2cd1",
+            "parentId": "wrk_5fbfc8bdf3a04133b8c8469d171329c6",
+            "modified": 1602799415306,
+            "created": 1602605733815,
+            "url": "{{ base_url }}/orphanages",
+            "name": "Listar Orfanatos",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1602519833665,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_4bf9059861ae462bb67874ac9bef4de7",
+            "parentId": "wrk_5fbfc8bdf3a04133b8c8469d171329c6",
+            "modified": 1602806675698,
+            "created": 1602606039964,
+            "url": "{{ base_url }}/orphanages/2",
+            "name": "Detalhe do Orfanato",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1602477809445,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_ff4ad9ee43d7408c93c4722508a6ecd4",
+            "parentId": "wrk_5fbfc8bdf3a04133b8c8469d171329c6",
+            "modified": 1602890627132,
+            "created": 1602890440648,
+            "url": "{{ base_url }}/orphanages/22",
+            "name": "Deletar Orfanato",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1602456797335,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_5ad97acdd42406ee23b10555fae0cfbec1ee54f6",
+            "parentId": "wrk_5fbfc8bdf3a04133b8c8469d171329c6",
+            "modified": 1602592244013,
+            "created": 1602592244013,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1602592244013,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_5ad97acdd42406ee23b10555fae0cfbec1ee54f6",
+            "parentId": "wrk_5fbfc8bdf3a04133b8c8469d171329c6",
+            "modified": 1602592244018,
+            "created": 1602592244018,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_4575597c72fe45d1b311718402fa9d9b",
+            "parentId": "wrk_5fbfc8bdf3a04133b8c8469d171329c6",
+            "modified": 1602592243356,
+            "created": 1602592243356,
+            "fileName": "NLW#3",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        },
+        {
+            "_id": "env_980caf9ecb9b4d0cb06cf951516112f5",
+            "parentId": "env_5ad97acdd42406ee23b10555fae0cfbec1ee54f6",
+            "modified": 1602603874563,
+            "created": 1602603844727,
+            "name": "Development",
+            "data": { "base_url": "http://localhost:5500" },
+            "dataPropertyOrder": { "&": ["base_url"] },
+            "color": "#190179",
+            "isPrivate": false,
+            "metaSortKey": 1602603844727,
+            "_type": "environment"
+        },
+        {
+            "_id": "env_19bb111a0a864add814502025f7b4ff6",
+            "parentId": "env_5ad97acdd42406ee23b10555fae0cfbec1ee54f6",
+            "modified": 1602806661044,
+            "created": 1602799423549,
+            "name": "Production",
+            "data": { "base_url": "https://happy-servidor.herokuapp.com" },
+            "dataPropertyOrder": { "&": ["base_url"] },
+            "color": "#90ce1c",
+            "isPrivate": false,
+            "metaSortKey": 1602799423549,
+            "_type": "environment"
+        }
+    ]
+}
