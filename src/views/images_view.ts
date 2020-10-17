@@ -5,7 +5,7 @@ export default {
     render(image: Image) {
         return {
             id: image.id,
-            url: `${localHost}/${image.path}`,
+            url: `${server}/${image.path}`,
         };
     },
     renderMany(images: Image[]) {
