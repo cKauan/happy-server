@@ -8,6 +8,7 @@ const upload = multer(multerConfig);
 
 routes.get("/orphanages", OrphanagesController.index);
 routes.get("/orphanages/:id", OrphanagesController.find);
+routes.delete("/orphanages/:id", OrphanagesController.destroy);
 routes.post("/orphanages", upload.array("images"), OrphanagesController.create);
 
 export default routes;

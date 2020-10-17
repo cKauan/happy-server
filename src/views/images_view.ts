@@ -1,9 +1,11 @@
 import Image from "../models/Image";
+const server = "https://happy-servidor.herokuapp.com/uploads";
+const localHost = 'http://localhost:5500'
 export default {
     render(image: Image) {
         return {
             id: image.id,
-            url: `https://happy-servidor.herokuapp.com/uploads/${image.path}`,
+            url: `${localHost}/${image.path}`,
         };
     },
     renderMany(images: Image[]) {
