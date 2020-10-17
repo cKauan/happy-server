@@ -75,9 +75,17 @@ export default {
             abortEarly: false,
         });
         const createOrphanage = orphanageRepository.create(data);
-
+            
         await orphanageRepository.save(createOrphanage);
 
         return res.status(201).json(createOrphanage);
+    },
+    async destroy(req: Request, res: Response) {
+        const { id }  = req.params;
+        const idToDelete = parseInt(id)
+        const orphanageRepository = getRepository(Orphanage);
+        const deleteOrphanage = await orphanageRepository.delete({ id: idToDelete })
+        console.log(deleteOrphanage);
+        return res.status(200).json({ message: "Sucess Deleted "});
     },
 };
